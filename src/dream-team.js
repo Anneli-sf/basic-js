@@ -14,7 +14,7 @@ const { NotImplementedError } = require('../extensions/index.js');
  *
  */
 
-function createDreamTeam(/* members */) {
+function createDreamTeam(members) {
   let dreamTeam = "";
   
   if (!Array.isArray(members) || !members.length) {
