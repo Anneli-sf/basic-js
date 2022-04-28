@@ -16,9 +16,9 @@ function getSeason( date ) {
   if (date == null || date == undefined) {return "Unable to determine the time of year!"};
   
   if (Object.prototype.toString.call(date) !== "[object Date]" ||
-            typeof date !== "object" ||
-            Object.keys(date).length > 0 ||
-            !(date instanceof Date)
+       typeof date !== "object" ||
+       Object.keys(date).length > 0 ||
+       !(date instanceof Date)
     ) throw new Error("Invalid date!");
 
     if (season > 0 && season < 3 || season == 12 ) {return 'winter'}
