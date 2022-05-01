@@ -16,10 +16,10 @@ function getCommonCharacterCount(/* s1, s2 */) {
   s2 = s2.split('');
   let counter = 0;
 
-   str1.forEach(e => {
-      if (str2.includes(e)) {
+   s1.forEach(e => {
+      if (s2.includes(e)) {
          counter++;
-         str2.splice(str2.indexOf(e), 1);
+         s2.splice(s2.indexOf(e), 1);
       };
    });
    return counter;
